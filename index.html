@@ -9,10 +9,10 @@
 	<a><img src="img/logo.png" alt="Логотип сайта"></a>
 	<nav class="main-nav">
 		<ul class="main-menu">
-			<li>Информация</li>
-			<li>Фото и видео</li>
-			<li>Карта штата</li>
-			<li>Гостиницы</li>
+			<li><a href="#">Информация</a></li>
+			<li><a href="#">Фото и видео</a></li>
+			<li><a href="#">Карта штата</a></li>
+			<li><a href="#">Гостиницы</a></li>
 		</ul>
 	</nav>
 </header>
@@ -85,16 +85,16 @@
 				<input type="date">
 				<!--	в mozilla не поддерживается	-->
 			</label></p>
-			<p><label>Взрослые:
+			<p><label for="adultnum">Взрослые:</label>
 				<button type="button" name="adult-decrement">-</button>
-				<input type="text" name="adult" value="2">
+				<input id="adultnum" type="text" name="adult" value="2">
 				<button type="button" name="adult-increment">+</button>
-			</label></p>
-			<p><label>Дети:
+			</p>
+			<p><label for="childrennum">Дети:</label>
 				<button type="button" name="children-decrement">-</button>
-				<input type="text" name="children" value="0">
+				<input id="childrennum" type="text" name="children" value="0">
 				<button type="button" name="children-increment">+</button>
-			</label></p>
+			</p>
 			<input type="submit" value="Найти">
 		</form>
 		<section class="map">
