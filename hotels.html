@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Седона - Гостиницы</title>
+</head>
+<body>
+<header class="main-header">
+	<a href="#"><img src="img/logo.png" alt="Логотип сайта"></a>
+	<nav class="main-nav">
+		<ul class="main-menu">
+			<li><a href="#">Информация</a></li>
+			<li><a href="#">Фото и видео</a></li>
+			<li><a href="#">Карта штата</a></li>
+			<li><a>Гостиницы</a></li>
+		</ul>
+	</nav>
+</header>
+<main class="main-content">
+	<h1 class="hidden">Гостиницы Седоны</h1>
+	<form class="filter" action="hotels.html" method="get">
+		<p class="filter-head-text">Инфраструктура:</p>
+		<p><label>Бассейн
+			<input name="pool" type="checkbox" checked>
+		</label></p>
+		<p><label>Парковка
+			<input name="parking" type="checkbox">
+		</label></p>
+		<p><label>Wi-Fi
+			<input name="wifi" type="checkbox">
+		</label></p>
+		<p class="filter-head-text">Тип жилья:</p>
+		<p><label>Бассейн
+			<input name="hotel" type="checkbox" checked>
+		</label></p>
+		<p><label>Мотель
+			<input name="motel" type="checkbox" checked>
+		</label></p>
+		<p><label>Апартаменты
+			<input name="appartement" type="checkbox" checked>
+		</label></p>
+		<p>Стоимость в сутки (Р):
+			<p>
+				<label>от<input type="text" name="pricefrom" value="0"></label>
+				<label>до<input type="text" name="priceto" value="3000"></label>
+			</p>
+			<div class="slider"></div>
+			<input type="submit" value="Показать">
+		</p>
+	</form>
+	
+	<section class="hotels-search-output">
+		<header class="hotels-search-output-controls">
+			<b>Найдено: 3</b>
+			<p>Сортировка:
+				<label>По цене<input type="radio" name="sorting" value="sort-by-price" checked></label>
+				<label>По типу<input type="radio" name="sorting" value="sort-by-type"></label>
+				<label>По рейтингу<input type="radio" name="sorting" value="sort-by-rating"></label>
+			</p>
+			<p>
+				<label>По возрастанию<input type="radio" name="order-by" value="asc" checked></label>
+				<label>По убыванию<input type="radio" name="order-by" value="desc"></label>
+			</p>
+		</header>
+		<section class="hotels-search-output-content">
+			
+		</section>
+	</section>
+
+	<footer class="main-footer">
+		<p>#VISITSEDONA</p>
+		<section class="social">
+			<ul>
+				<li><a href="#" class="vklink">ВКонтакте</a></li>
+				<li><a href="#" class="fblink">Facebook</a></li>
+				<li><a href="#" class="ytlink">YouTube</a></li>
+			</ul>
+		</section>
+		<p>Website by
+			<a href="#"><img src="img/htmlacademylogo.png" alt="HTML Academy">HTML Academy</a>
+		</p>
+	</footer>
+</main>
+</body>
+</html>
