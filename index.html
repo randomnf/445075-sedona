@@ -78,10 +78,12 @@
 		<form action="index.html" method="post">
 			<h2>Поиск гостиницы в Седоне</h2>
 			<p><label>Дата заезда:
-				<!--	input calendar	-->
+				<input type="date">
+				<!--	в mozilla не поддерживается	-->
 			</label></p>
 			<p><label>Дата выезда:
-				<!--	input calendar	-->
+				<input type="date">
+				<!--	в mozilla не поддерживается	-->
 			</label></p>
 			<p><label>Взрослые:
 				<button type="button" name="adult-decrement">-</button>
@@ -96,19 +98,21 @@
 			<input type="submit" value="Найти">
 		</form>
 		<section class="map">
-			
+			<!--	интерактивная карта	-->
 		</section>
 	</section>
 	
 	<footer class="main-footer">
 		<p>#VISITSEDONA</p>
 		<section class="social">
-			<a href="#" class="vklink">ВКонтакте</a>
-			<a href="#" class="fblink">Facebook</a>
-			<a href="#" class="ytlink">YouTube</a>
+			<ul>
+				<li><a href="#" class="vklink">ВКонтакте</a></li>
+				<li><a href="#" class="fblink">Facebook</a></li>
+				<li><a href="#" class="ytlink">YouTube</a></li>
+			</ul>
 		</section>
 		<p>Website by
-			<a href="#"><img src="htmlacademylogo.png" alt="HTML Academy">HTML Academy</a>
+			<a href="#"><img src="img/htmlacademylogo.png" alt="HTML Academy">HTML Academy</a>
 		</p>
 	</footer>
 </main>
