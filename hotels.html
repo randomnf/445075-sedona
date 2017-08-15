@@ -39,18 +39,18 @@
 		<p><label>Апартаменты
 			<input name="appartement" type="checkbox" checked>
 		</label></p>
-		<p>Стоимость в сутки (Р):
+		<div>Стоимость в сутки (Р):
 			<p>
 				<label>от<input type="text" name="pricefrom" value="0"></label>
 				<label>до<input type="text" name="priceto" value="3000"></label>
 			</p>
 			<div class="slider"></div>
 			<input type="submit" value="Показать">
-		</p>
+		</div>
 	</form>
 	
-	<section class="hotels-search-output">
-		<header class="hotels-search-output-controls">
+	<section class="hotels-search-result">
+		<header class="hotels-search-result-controls">
 			<b>Найдено: 3</b>
 			<p>Сортировка:
 				<label>По цене<input type="radio" name="sorting" value="sort-by-price" checked></label>
@@ -62,8 +62,37 @@
 				<label>По убыванию<input type="radio" name="order-by" value="desc"></label>
 			</p>
 		</header>
-		<section class="hotels-search-output-content">
-			
+		<section class="hotels-search-result-content">
+			<section class="searched-hotel">
+				<h2>Amara Resort & SPA</h2>
+				<a href="#"><img src="img/amara.jpg" alt="Amara Resort & SPA"></a>
+				<span class="hotel-type">Гостиница</span>
+				<span class="hotel-price">от 4000 р.</span>
+				<a href="#" class="details-btn">Подробнее</a>
+				<a href="#" class="booking-btn">Забронировать</a>
+				<span class="star-rating four-star"></span>
+				<span class="user-rating">Рейтинг: 8,5</span>
+			</section>
+			<section class="searched-hotel">
+				<h2>Desert Quail Inn</h2>
+				<a href="#"><img src="img/desert-quail.jpg" alt="Desert Quail Inn"></a>
+				<span class="hotel-type">Мотель</span>
+				<span class="hotel-price">от 3000 р.</span>
+				<a href="#" class="details-btn">Подробнее</a>
+				<a href="#" class="booking-btn">Забронировать</a>
+				<span class="star-rating three-star"></span>
+				<span class="user-rating">Рейтинг: 8,9</span>
+			</section>
+			<section class="searched-hotel">
+				<h2>Villas at Poco Diablo</h2>
+				<a href="#"><img src="img/villas-at-poco.jpg" alt="Villas at Poco Diablo"></a>
+				<span class="hotel-type">Апартаменты</span>
+				<span class="hotel-price">от 2000 р.</span>
+				<a href="#" class="details-btn">Подробнее</a>
+				<a href="#" class="booking-btn">Забронировать</a>
+				<span class="star-rating two-star"></span>
+				<span class="user-rating">Рейтинг: 9,2</span>
+			</section>
 		</section>
 	</section>
 
