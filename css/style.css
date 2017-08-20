@@ -1,0 +1,38 @@
+﻿body{
+	font-family: "PTSans";
+	font-size: 14px;
+	line-height: 21px;
+	color: black;
+	font-weight: normal;
+	
+	margin: 0;
+	/*background-color: #f2f2f2;
+	
+	*/
+}
+
+.features-header{
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: lighter;			/* ????????????????????? */
+}
+
+.feature h3,
+.promo h3{
+	font-size: 21px;
+	line-height: 21px;
+	color: black;
+	font-weight: bold;
+}
+
+h3.color-white{
+	color: white;					/*Раскомментировать после добавления голубого фона*/
+}
+
+.hotel-description h2{
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+}
