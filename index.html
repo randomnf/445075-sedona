@@ -8,6 +8,7 @@
 <body>
 <div class="container">
 <header class="page-header">
+	<!--нужен ли тут текст в ссылке?-->
 	<a><img src="img/logo.png" alt="Логотип сайта"></a>
 	<nav class="main-nav">
 		<ul class="main-menu">
@@ -80,17 +81,17 @@
 	<section class="find-hotel">
 		<b>Заинтересовались?</b>
 		<p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-		<h2 class="form-show-btn">Поиск гостиницы в Седоне</h2>
-		<!--	форма скрыта, открывается по клику на надпись "поиск *"	-->
+		<h2><button type="button" class="form-show-btn">Поиск гостиницы в Седоне</button></h2>
+		<!--	форма видима по умолчанию, скрывается по клику на надпись "поиск *"	-->
 		<form action="index.html" method="post">
 			<p>
-				<label>Дата заезда:</label>
-				<input type="text">
+				<label for="arrival-date">Дата заезда:</label>
+				<input id="arrival-date" type="text">
 				<button class="calendar"><img src="img/calendar.png" alt="Календарь"></button>
 			</p>
 			<p>
-				<label>Дата выезда:</label>
-				<input type="text">
+				<label for="departure-date">Дата выезда:</label>
+				<input id="departure-date" type="text">
 				<button class="calendar"><img src="img/calendar.png" alt="Календарь"></button>
 			</p>
 			<p>
