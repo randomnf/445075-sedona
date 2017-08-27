@@ -1,21 +1,67 @@
-﻿body{
-	font-family: "PTSans";
-	font-size: 14px;
-	line-height: 21px;
-	color: black;
-	font-weight: normal;
-	
+﻿html,body{
 	margin: 0;
-	/*background-color: #f2f2f2;
-	
-	*/
+	padding: 0;
 }
 
-.features-header{
+body{
+	font-family: "PT Sans","PTSans-Regular",sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333;
+	font-weight: normal;
+	text-transform: uppercase;
+	
+	background-color: #f2f2f2;
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+	background-color: white;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover,
+a:focus{
+	color: #81b3d2;
+}
+
+a:active{
+	opacity: .3;
+}
+
+a.active-link{
+	color: #766357;
+}
+
+.intro{
+	height: 508px;
+	background: #e2eff8 url(../img/background-1200.jpg) no-repeat top center;
+}
+
+.feature-lead{
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.feature h2{
 	font-size: 14px;
 	line-height: 26px;
-	color: black;
-	font-weight: lighter;			/* ????????????????????? */
+	font-weight: normal;
+}
+
+.feature-blue{
+	color: white;
+	background: #81b3d2;
+}
+
+.feature-gray{
+	background: #eee;
 }
 
 .feature h3,
@@ -23,16 +69,140 @@
 	font-size: 21px;
 	line-height: 21px;
 	color: black;
-	font-weight: bold;
 }
 
 h3.color-white{
-	//color: white;					/*Раскомментировать после добавления голубого фона*/
+	color: white;
 }
+
+.text-interested{
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.line-height-24{
+	line-height: 24px;
+}
+
+/*.find-hotel h2,					//стоит ли батон оборачивать в х2?*/
+.form-show-btn{
+	font-size: 21px;
+	line-height: 26px;
+	color: white;
+	background: #766357;
+	border: 0;
+}
+
+.form-show-btn:hover,
+.form-show-btn:focus{
+	background: #604e43;
+}
+
+.form-show-btn:active{
+	color: rgba(255,255,255,.3)
+}
+
+.find-hotel label{
+	font-weight: bold;
+	line-height: 26px;
+}
+
+/*---------------------------------Стили для страницы hotels.html---------------------------------*/
+
+.filter{
+	height: 217px;
+	background: #e2eff8 url(../img/filter-background-1200.png) no-repeat top center;
+}
+
+.filter legend{
+	font-size: 16px;
+	color: white;
+}
+
+/*  .filter input[type=checkbox]  */
+.filter input{
+	color: white;
+}
+
+.found-number{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.text-sort,
+.sorting-controls li{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+
+.sorting-controls a{
+	color: rgba(0,0,0,.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-controls a.active-link{
+	color: #81b3d2;
+}
+
+.sorting-controls a:hover,
+.sorting-controls a:focus{
+	color: #81b3d2;
+}
+
+.sorting-controls a:active{
+	color: black;
+	text-decoration: none;
+}
+
+			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
 
 .hotel-description h2{
 	font-size: 21px;
 	line-height: 26px;
 	color: black;
+}
+
+.details-btn{
+	background: #81b3d2;
+	color: white;
 	font-weight: bold;
+}
+
+/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+
+a.detail-btn:hover,
+a.detail-btn:focus{
+	background: #669ec0;
+	color: white;
+}
+
+a.detail-btn:active{
+	background: #5496bd;
+	color: rgba(255,255,255,.3);
+}
+			
+a.booking-btn{
+	background: #766357;
+	color: white;
+	font-weight: bold;
+}
+
+a.booking-btn:hover,
+a.booking-btn:focus{
+	background: #604e43;
+	color: white;
+}
+
+a.booking-btn:active{
+	background: #503e33;
+	color: rgba(255,255,255,.3);
+}
+
+			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
+
+.user-rating{
+	background: #f2f2f2;
 }

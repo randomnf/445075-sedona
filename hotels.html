@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона - Гостиницы</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
 	<h1 class="hidden">Гостиницы Седоны</h1>
 	<form class="filter" action="hotels.html" method="get">
 		<fieldset>
-			<legend class="filter-head-text">Инфраструктура:</legend>
+			<legend>Инфраструктура:</legend>
 			<input name="pool" type="checkbox" checked>
 			<label>Бассейн</label>
 			<input name="parking" type="checkbox">
@@ -31,7 +32,7 @@
 			<label>Wi-Fi</label>
 		</fieldset>
 		<fieldset>
-			<legend class="filter-head-text">Тип жилья:</legend>
+			<legend>Тип жилья:</legend>
 			<input name="hotel" type="checkbox" checked>
 			<label>Гостиница</label>
 			<input name="motel" type="checkbox" checked>
@@ -47,10 +48,10 @@
 	
 	
 	<section class="sorting-controls">
-		<span>Найдено: <b>3</b></span>
-		<span>Сортировка:</span>
+		<span class="found-number">Найдено: <b>3</b></span>
+		<span class="text-sort">Сортировка:</span>
 		<ul>
-			<li><a href="#">По цене</a></li>
+			<li><a class="active-link">По цене</a></li>
 			<li><a href="#">По типу</a></li>
 			<li><a href="#">По рейтингу</a></li>
 			<li>
@@ -64,7 +65,7 @@
 		<section class="searched-hotel">
 			<img src="img/amara.png" alt="Amara Resort & SPA">
 			<div class="hotel-description">
-				<h2>Amara Resort &amp; SPA</h2>
+				<a href="#"><h2>Amara Resort &amp; SPA</h2></a>
 				<div class="more-info">
 					<span class="hotel-type">Гостиница</span>
 					<a href="#" class="details-btn">Подробнее</a>
