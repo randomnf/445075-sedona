@@ -136,7 +136,7 @@ h3.color-white{
 	line-height: 18px;
 }
 
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
 
 .sorting-controls a{
 	color: rgba(0,0,0,.3);
@@ -145,19 +145,20 @@ h3.color-white{
 
 .sorting-controls a.active-link{
 	color: #81b3d2;
+	border-bottom: 0;
 }
 
-.sorting-controls a:hover,
-.sorting-controls a:focus{
+.sorting-controls a:not(.active-link):hover,
+.sorting-controls a:not(.active-link):focus{
 	color: #81b3d2;
 }
 
-.sorting-controls a:active{
+.sorting-controls a:not(.active-link):active{
 	color: black;
 	text-decoration: none;
 }
 
-			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
+			/*странно переопределяются стили для ссылок, разобраться со специфичностью*/
 
 .hotel-description h2{
 	font-size: 21px;
@@ -171,38 +172,50 @@ h3.color-white{
 	font-weight: bold;
 }
 
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
 
-a.detail-btn:hover,
-a.detail-btn:focus{
+.details-btn:hover,
+.details-btn:focus{
 	background: #669ec0;
 	color: white;
 }
 
-a.detail-btn:active{
+.details-btn:active{
 	background: #5496bd;
 	color: rgba(255,255,255,.3);
 }
 			
-a.booking-btn{
+.booking-btn{
 	background: #766357;
 	color: white;
 	font-weight: bold;
 }
 
-a.booking-btn:hover,
-a.booking-btn:focus{
+.booking-btn:hover,
+.booking-btn:focus{
 	background: #604e43;
 	color: white;
 }
 
-a.booking-btn:active{
+.booking-btn:active{
 	background: #503e33;
 	color: rgba(255,255,255,.3);
 }
 
-			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
+/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
 
 .user-rating{
 	background: #f2f2f2;
+}
+
+.fblink{
+	font-size: 0;
+}
+
+.fblink::before{
+	content: "";
+	background: #81b3d2 url(../img/facebook-logo.svg) no-repeat;
+	display: block;
+	width: 15px;
+	height: 15px;
 }
