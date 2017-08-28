@@ -35,7 +35,7 @@ a:active{
 	opacity: .3;
 }
 
-a.active-link{
+.active-link{
 	color: #766357;
 }
 
@@ -136,7 +136,7 @@ h3.color-white{
 	line-height: 18px;
 }
 
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+/*			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
 
 .sorting-controls a{
 	color: rgba(0,0,0,.3);
@@ -144,6 +144,12 @@ h3.color-white{
 }
 
 .sorting-controls a.active-link{
+	color: #81b3d2;
+	border-bottom: 0;
+}
+
+.sorting-controls a.active-link:hover,
+.sorting-controls a.active-link:active{
 	color: #81b3d2;
 }
 
@@ -157,7 +163,7 @@ h3.color-white{
 	text-decoration: none;
 }
 
-			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
+			/*странно переопределяются стиля для ссылок, разобраться со специфичностью*/
 
 .hotel-description h2{
 	font-size: 21px;
@@ -171,7 +177,7 @@ h3.color-white{
 	font-weight: bold;
 }
 
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью
+/*			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
 
 a.detail-btn:hover,
 a.detail-btn:focus{
@@ -201,7 +207,7 @@ a.booking-btn:active{
 	color: rgba(255,255,255,.3);
 }
 
-			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
+			/*странно переопределяются стиля для ссылок, разобраться со специфичностью*/
 
 .user-rating{
 	background: #f2f2f2;
