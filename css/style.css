@@ -136,12 +136,6 @@ h3.color-white{
 	line-height: 18px;
 }
 
-<<<<<<< HEAD
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
-=======
-/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
->>>>>>> 06ab287d1961a6c1c9d7bb25905965764707f4dd
-
 .sorting-controls a{
 	color: rgba(0,0,0,.3);
 	border-bottom: 1px dotted #81b3d2;
@@ -150,14 +144,11 @@ h3.color-white{
 .sorting-controls a.active-link{
 	color: #81b3d2;
 	border-bottom: 0;
-<<<<<<< HEAD
 }
 
 .sorting-controls a.active-link:hover,
 .sorting-controls a.active-link:active{
 	color: #81b3d2;
-=======
->>>>>>> 06ab287d1961a6c1c9d7bb25905965764707f4dd
 }
 
 .sorting-controls a:not(.active-link):hover,
@@ -170,12 +161,6 @@ h3.color-white{
 	text-decoration: none;
 }
 
-<<<<<<< HEAD
-			/*странно переопределяются стиля для ссылок, разобраться со специфичностью*/
-=======
-			/*странно переопределяются стили для ссылок, разобраться со специфичностью*/
->>>>>>> 06ab287d1961a6c1c9d7bb25905965764707f4dd
-
 .hotel-description h2{
 	font-size: 21px;
 	line-height: 26px;
@@ -187,12 +172,6 @@ h3.color-white{
 	color: white;
 	font-weight: bold;
 }
-
-<<<<<<< HEAD
-/*			странно переопределяются стиля для ссылок, разобраться со специфичностью*/
-=======
-/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
->>>>>>> 06ab287d1961a6c1c9d7bb25905965764707f4dd
 
 .details-btn:hover,
 .details-btn:focus{
@@ -221,12 +200,6 @@ h3.color-white{
 	background: #503e33;
 	color: rgba(255,255,255,.3);
 }
-
-<<<<<<< HEAD
-			/*странно переопределяются стиля для ссылок, разобраться со специфичностью*/
-=======
-/*			странно переопределяются стили для ссылок, разобраться со специфичностью*/
->>>>>>> 06ab287d1961a6c1c9d7bb25905965764707f4dd
 
 .user-rating{
 	background: #f2f2f2;
