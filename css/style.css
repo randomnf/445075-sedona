@@ -4,7 +4,7 @@
 }
 
 body{
-	font-family: "PT Sans","PTSans-Regular",sans-serif;
+	font-family: "PT Sans","Arial",sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333;
@@ -119,15 +119,14 @@ h3.color-white{
 	display: inline-block;   /*-------------------временная мера-------------------*/
 	font-size: 0;
 	line-height: 0;
+	background: #81b3d2;
 }
 
 .social a:not(:last-of-type){
 	//margin-right: 6px;
 }
 
-.twlink::before,
-.fblink::before,
-.ytlink::before{
+.social a::before{
 	content: "";
 	display: block;
 	width: 46px;
@@ -135,24 +134,28 @@ h3.color-white{
 }
 
 .twlink::before{
-	background: #81b3d2 url(../img/twitter-logo.svg) no-repeat center center;
+	background: url(../img/twitter-logo.svg) no-repeat center center;
 }
 
 .fblink::before{
-	background: #81b3d2 url(../img/facebook-logo.svg) no-repeat center center;
+	background: url(../img/facebook-logo.svg) no-repeat center center;
 }
 
 .ytlink::before{
-	background: #81b3d2 url(../img/youtube-logo.svg) no-repeat center center;
+	background: url(../img/youtube-logo.svg) no-repeat center center;
 }
 
-.twlink:hover::before,
-.twlink:focus::before,
-.fblink:hover::before,
-.fblink:focus::before,
-.ytlink:hover::before,
-.ytlink:focus::before{
+.social a:hover,
+.social a:focus{
 	background-color: #669ec0;
+}
+
+.social a:active{
+	background-color: #5496bd;
+}
+
+.social a:active::before{
+	opacity: .3;
 }
 
 .copyrights{
@@ -171,8 +174,7 @@ h3.color-white{
 	color: white;
 }
 
-/*  .filter input[type=checkbox]  */
-.filter input{
+.filter label{
 	color: white;
 }
 
