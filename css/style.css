@@ -103,6 +103,7 @@ a:active{
 .feature{
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .feature-header{
@@ -113,30 +114,34 @@ a:active{
 }
 
 .feature-lead{
-	margin-top: 20px;
+	margin-top: 60px;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
 }
 
 .feature-header h2{
+	margin-top: 27px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
 }
 
 .feature-content{
+	margin-top: 39px;
 	display: flex;
+	align-items: flex-start;
 	flex-basis: 100%;
 }
 
 .feature-blue,
 .feature-gray{
+	min-height: 256px;
+	flex-basis: 33%;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-basis: 33%;
-	flex-grow: 1;
 }
 
 .feature-blue{
@@ -146,6 +151,30 @@ a:active{
 
 .feature-gray{
 	background: #eee;
+}
+
+.feature-blue h3,
+.feature-blue p,
+.feature-gray h3,
+.feature-gray p{
+	margin: 0;
+	text-align: center;
+}
+
+.feature-blue h3,
+.feature-gray h3{
+	margin-top: 48px;
+	text-align: center;
+}
+
+.feature-blue p,
+.feature-gray p{
+	margin-top: 23px;
+}
+
+.feature-blue p:last-of-type,
+.feature-gray p:last-of-type{
+	margin-top: 21px;
 }
 
 .feature-img-mask{
@@ -161,6 +190,7 @@ a:active{
 }
 
 .promo-list{
+	min-height: 325px;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -175,7 +205,12 @@ a:active{
 	align-items: center;
 }
 
+.promo-list h3{
+	margin: 155px 0 0 0;
+}
+
 .promo-list p{
+	margin-top: 24px;
 	text-align: center;
 }
 
