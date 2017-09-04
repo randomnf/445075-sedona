@@ -3,7 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!--
+	В Google Fonts ставил галочки только на нормальное, жирное начертания и на кириллические символы,
+	но в самом цсс файле гугл все равно подключает расширенные латинские и кириллические символы.
+	Поэтому создал отдельный файл fonts.css, и туда включил только нужные начертания.
+	-->
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,17 +31,24 @@
 	</section>
 	
 	<section class="feature">
-		<b class="feature-lead">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b>
-		<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-		<div class="feature-blue">
-			<h3 class="color-white">Настоящий городок</h3>
-			<p>— №1 —</p>
-			<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ</p>
+		<div class="feature-header">
+			<b class="feature-lead">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b>
+			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
 		</div>
-			<img src="img/true-city.png" alt="Настоящий городок">
+		<div class="feature-content">
+			<div class="feature-blue">
+				<h3 class="color-white">Настоящий городок</h3>
+				<p>— №1 —</p>
+				<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ</p>
+			</div>
+			<div class="feature-img-mask">
+				<img src="img/true-city.png" alt="Настоящий городок">
+			</div>
+		</div>
 	</section>
+	
 	<section class="promo">
-		<ul>
+		<ul class="promo-list">
 			<li>
 				<h3>Жилье</h3>
 				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -51,15 +63,18 @@
 			</li>
 		</ul>
 	</section>
-		
+
 	<section class="feature">
-		<img src="img/devils-bridge.jpg" alt="Мост дьявола">
+		<div class="feature-img-mask">
+			<img src="img/devils-bridge.jpg" alt="Мост дьявола">
+		</div>
 		<div class="feature-blue">
 			<h3 class="color-white">Там есть мост дьявола</h3>
 			<p>— №2 —</p>
 			<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 		</div>
 	</section>
+
 	<section class="feature">
 		<div class="feature-gray">
 			<h3>Небольшая площадь</h3>
@@ -84,16 +99,16 @@
 		<!--	стоит ли батон оборачивать в х2?	-->
 		<h2><button type="button" class="form-show-btn">Поиск гостиницы в Седоне</button></h2>
 		<!--	форма видима по умолчанию, скрывается по клику на надпись "поиск *"	-->
-		<form action="index.html" method="post">
+		<form class="find-hotel-form" action="index.html" method="post">
 			<p>
 				<label for="arrival-date">Дата заезда:</label>
 				<input id="arrival-date" type="text">
-				<button class="calendar"><img src="img/calendar.png" alt="Календарь"></button>
+				<button class="calendar"><img src="img/calendar.svg" alt="Календарь"></button>
 			</p>
 			<p>
 				<label for="departure-date">Дата выезда:</label>
 				<input id="departure-date" type="text">
-				<button class="calendar"><img src="img/calendar.png" alt="Календарь"></button>
+				<button class="calendar"><img src="img/calendar.svg" alt="Календарь"></button>
 			</p>
 			<p>
 				<label for="adultnum">Взрослые:</label>

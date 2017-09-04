@@ -78,11 +78,11 @@ a:focus{
 }
 
 a:active{
-	//opacity: .3;		/*---------пересмотреть----------*/
+	color: rgba(0,0,0,.3);
 }
 
 .active-link{
-	color: #766357;
+	color: #77645D;
 }
 
 .intro{
@@ -100,15 +100,43 @@ a:active{
 	margin-top: 76px;
 }
 
-.feature-lead{
-	font-size: 21px;
-	line-height: 26px;
+.feature{
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.feature h2{
+.feature-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 100%;
+}
+
+.feature-lead{
+	margin-top: 20px;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.feature-header h2{
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
+}
+
+.feature-content{
+	display: flex;
+	flex-basis: 100%;
+}
+
+.feature-blue,
+.feature-gray{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 33%;
+	flex-grow: 1;
 }
 
 .feature-blue{
@@ -120,11 +148,35 @@ a:active{
 	background: #eee;
 }
 
+.feature-img-mask{
+	flex-basis: 66%;
+	flex-grow: 2;
+}
+
 .feature h3,
 .promo h3{
 	font-size: 21px;
 	line-height: 21px;
 	color: black;
+}
+
+.promo-list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+
+.promo-list li{
+	flex-basis: 33%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo-list p{
+	text-align: center;
 }
 
 h3.color-white{
@@ -161,6 +213,12 @@ h3.color-white{
 .find-hotel label{
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.page-footer{
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-around;
 }
 
 .text-visit-sedona{
@@ -220,14 +278,38 @@ h3.color-white{
 
 /*---------------------------------Стили для страницы hotels.html---------------------------------*/
 
-.filter{
-	height: 217px;
+.wrapper{
+	padding: 0 6%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.filter-wrapper{
 	background: #e2eff8 url(../img/filter-background-1200.png) no-repeat top center;
+}
+
+.filter{
+	display: flex;
+	align-items: flex-start;
+	flex-basis: 100%;
+	height: 217px;
 }
 
 .filter legend{
 	font-size: 16px;
 	color: white;
+}
+
+.filter fieldset{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	border: 0;
+}
+
+.filter fieldset:last-of-type{
+	margin-left: auto;
 }
 
 .filter label{
@@ -238,6 +320,18 @@ h3.color-white{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+}
+
+.sorting-buttons{
+	flex-grow: 1;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	list-style: none;
+}
+
+.sorting-buttons li:nth-of-type(3){
+	margin-right: auto;
 }
 
 .text-sort,
@@ -271,10 +365,29 @@ h3.color-white{
 	border: 0;
 }
 
+.searched-hotel{
+	padding: 20px 0;
+	border-top: 1px solid #E5E5E5;
+}
+
+.searched-hotel:last-of-type{
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.hotel-description{
+	margin-left: 20px;
+}
+
+.rating{
+	margin-left: auto;
+}
+
 .hotel-description h2{
+	margin: 0;
 	font-size: 21px;
 	line-height: 26px;
 	color: black;
+	vertical-align: top;
 }
 
 .details-btn{
