@@ -22,8 +22,9 @@ body{
 }
 
 .container{
-	width: 1200px;
-	margin: auto;
+	/*min-width: 768px;
+	max-*/width: 1200px;
+	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 0 15px rgba(0,1,1,.2);
 }
@@ -218,17 +219,32 @@ h3.color-white{
 	color: white;
 }
 
+.find-hotel{
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .text-interested{
+	margin-top: 30px;
 	font-size: 30px;
 	line-height: 36px;
 }
 
-.line-height-24{
+.text-description{
 	line-height: 24px;
+	text-align: center;
+}
+
+.find-hotel h2{
+	margin: 0;
 }
 
 /*.find-hotel h2,					//стоит ли батон оборачивать в х2?*/
 .form-show-btn{
+	width: 550px;
+	height: 50px;
 	font-size: 21px;
 	line-height: 26px;
 	color: white;
@@ -248,6 +264,15 @@ h3.color-white{
 .find-hotel label{
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.find-hotel-form{
+	width: 550px;
+	position: absolute;
+	top: 100%;
+	
+	background: #fff;
+	outline: 1px solid red;
 }
 
 .page-footer{
@@ -488,4 +513,11 @@ a.sort-desc::before{
 
 .user-rating{
 	background: #f2f2f2;
+}
+
+@media (max-width: 768px){
+	.logo{
+		left: 315px;
+		transform: none;
+	}
 }
