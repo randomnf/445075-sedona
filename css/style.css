@@ -274,9 +274,36 @@ h3.color-white{
 	list-style: none;
 }
 
+/*---------------------------ASC-DESC-----------------------------*/
+
 .sorting-buttons li:nth-of-type(3){
 	margin-right: auto;
 }
+
+.sorting-controls .sort-up-down a{
+	font-size: 0;
+	line-height: 0;
+	border-bottom: 0;
+}
+
+a.sort-asc::before,
+a.sort-desc::before{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+	
+a.sort-asc::before{
+	background: url(../img/icon-up-dir.svg) no-repeat 0 0;
+	fill: #ccc;
+}
+
+a.sort-desc::before{
+	background: url(../img/icon-down-dir.svg) no-repeat 0 0;
+}
+
+/*---------------------------ASC-DESC-----------------------------*/
 
 .text-sort,
 .sorting-controls li{
