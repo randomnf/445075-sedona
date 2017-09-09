@@ -301,6 +301,7 @@ h3.color-white{
 .find-hotel-form{
 	position: absolute;
 	top: 100%;
+	left: 315px;
 	z-index: 2;
 	width: 459px;
 	padding: 55px;
@@ -355,7 +356,19 @@ h3.color-white{
 .calendar,
 .plus-minus-btn{
 	min-width: 38px;
+	font-size: 26px;
+	font-weight: bold;
 	line-height: 0;
+	color: #a9a9a9;
+}
+
+.plus-minus-btn:hover,
+.plus-minus-btn:focus{
+	color: #000;
+}
+
+.plus-minus-btn:active{
+	color: #81b3d2;
 }
 
 .calendar svg{
@@ -669,8 +682,6 @@ h3.color-white{
 	border: 0;
 }
 
-/*---------------------------ASC-DESC-----------------------------*/
-
 .sorting-buttons li:nth-of-type(3){
 	margin-right: auto;
 }
@@ -681,24 +692,25 @@ h3.color-white{
 	border-bottom: 0;
 }
 
-a.sort-asc::before,
-a.sort-desc::before{
-	content: "";
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-}
-	
-a.sort-asc::before{
-	background: url(../img/icon-up-dir.svg) no-repeat 0 0;
-	fill: #ccc;
+.sort-asc{
+	margin-right: 10px;
 }
 
-a.sort-desc::before{
-	background: url(../img/icon-down-dir.svg) no-repeat 0 0;
+.sort-up-down svg{
+	fill: #cacaca;
 }
 
-/*---------------------------ASC-DESC-----------------------------*/
+.sort-asc:hover svg,
+.sort-asc:focus svg,
+.sort-desc:hover svg,
+.sort-desc:focus svg{
+	fill: #000;
+}
+
+.sort-asc:active svg,
+.sort-desc:active svg{
+	fill: #81b3d2;
+}
 
 .searched-hotel{
 	padding-top: 25px;
@@ -777,6 +789,10 @@ a.booking-btn:active{
 	align-items: flex-end;
 }
 
+.star-rating{
+	margin-top: 4px;
+}
+
 .user-rating{
 	height: 21px;
 	padding: 3px 13px;
@@ -784,9 +800,15 @@ a.booking-btn:active{
 	background: #f2f2f2;
 }
 
-@media (max-width: 768px){
-	.logo{
-		left: 315px;
-		transform: none;
-	}
+::-webkit-input-placeholder {
+	color: black;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: black;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: black;
+	opacity: 1;
 }
