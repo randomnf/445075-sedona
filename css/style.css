@@ -737,10 +737,10 @@ h3.color-white{
 	cursor: pointer;
 }
 
-.btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
+.btn-transparent:hover,
+.btn-transparent:focus {
+	color: #000000;
+	background: #ffffff;
 }
 
 .sorting-controls{
