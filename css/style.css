@@ -914,22 +914,22 @@ a.booking-btn:active{
 }
 
 .star-rating{
-	width: 17px;
+	width: 23px;
 	height: 17px;
 	margin-top: 4px;
-	background: url(../img/star.svg) repeat-x 0 0;
+	background: url(../img/star.svg) space 0 0;
 }
 
 .two-star{
-	width: 36px;
+	width: 41px;
 }
 
 .three-star{
-	width: 54px;
+	width: 65px;
 }
 
 .four-star{
-	width: 72px;
+	width: 88px;
 }
 
 .user-rating{
