@@ -673,10 +673,52 @@ h3.color-white{
   vertical-align: top;
 
   cursor: pointer;
+=======
+.filter .filter-range{
+	width: 318px;
+	color: #ffffff;
+}
+
+.filter .filter-range-title {
+	margin-bottom: 9px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+	height: 33px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 14px;
+	line-height: 21px;
+	vertical-align: center;
+	cursor: pointer;
+>>>>>>> 37a4727f82b62c3c1cef6332771cda403e79860f
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
+<<<<<<< HEAD
   width: 90px;
   padding-left: 65px;
 }
@@ -757,6 +799,86 @@ h3.color-white{
   color: #000000;
 
   background: #ffffff;
+=======
+	width: 75px;
+	padding-left: 65px;
+	text-align: center;
+}
+
+.price-controls .min-price{
+	margin-right: 5px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	top: -10px;
+	border-width: 9px;
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.btn-transparent {
+	width: 137px;
+	height: 36px;
+	margin: 0 0 0 85px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+	color: #000000;
+	background: #ffffff;
+>>>>>>> 37a4727f82b62c3c1cef6332771cda403e79860f
 }
 
 .sorting-controls{
@@ -930,7 +1052,22 @@ a.booking-btn:active{
 }
 
 .star-rating{
+	width: 23px;
+	height: 17px;
 	margin-top: 4px;
+	background: url(../img/star.svg) space 0 0;
+}
+
+.two-star{
+	width: 41px;
+}
+
+.three-star{
+	width: 65px;
+}
+
+.four-star{
+	width: 88px;
 }
 
 .user-rating{
