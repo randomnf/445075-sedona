@@ -620,60 +620,6 @@ h3.color-white{
 	background: url(../img/checkbox-on.svg) no-repeat 0 0;
 }
 
-
-
-.filter-range {
-  width: 330px;
-  //margin: 50px auto; /* для демо */
-
-  color: #ffffff;
-  text-transform: uppercase;
-  
-  outline: 1px solid red;
-}
-
-.filter-range-title {
-  margin-bottom: 9px;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.price-controls {
-  position: relative;
-  
-  height: 36px;
-  margin-bottom: 20px;
-
-  font-size: 0;
-
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-
-.price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 2px;
-  height: 22px;
-
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-}
-
-.price-controls label {
-  display: inline-block;
-
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-
-  cursor: pointer;
-=======
 .filter .filter-range{
 	width: 318px;
 	color: #ffffff;
@@ -713,14 +659,15 @@ h3.color-white{
 	line-height: 21px;
 	vertical-align: center;
 	cursor: pointer;
->>>>>>> 37a4727f82b62c3c1cef6332771cda403e79860f
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-<<<<<<< HEAD
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price{
+	padding-left: 52px;
 }
 
 .price-controls input {
@@ -799,7 +746,7 @@ h3.color-white{
   color: #000000;
 
   background: #ffffff;
-=======
+
 	width: 75px;
 	padding-left: 65px;
 	text-align: center;
@@ -878,7 +825,6 @@ h3.color-white{
 .btn-transparent:focus {
 	color: #000000;
 	background: #ffffff;
->>>>>>> 37a4727f82b62c3c1cef6332771cda403e79860f
 }
 
 .sorting-controls{
