@@ -592,15 +592,21 @@ h3.color-white{
 }
 
 .filter fieldset{
-	width: 255px;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	display: flex;
 	flex-direction: column;
+outline: 1px solid orange;
+}
+
+
+.filter fieldset:first-of-type{
+	margin-right: 114px;
 }
 
 .filter fieldset:last-of-type{
+	width: 30%;
 	margin-left: auto;
 }
 
@@ -635,8 +641,9 @@ h3.color-white{
 }
 
 .filter .filter-range{
-	width: 318px;
-	color: #ffffff;
+	width: 100%;
+	color: #fff;
+	display: flex;
 }
 
 .filter .filter-range-title {
@@ -676,101 +683,15 @@ h3.color-white{
 }
 
 .price-controls .min-price {
-  width: 90px;
-  padding-left: 65px;
+	width: 90px;
+	padding-left: 65px;
 }
 
 .price-controls .max-price{
 	padding-left: 52px;
 }
 
-.price-controls input {
-  width: 50px;
-  margin: 0;
-
-  color: inherit;
-  font: inherit;
-
-  background: none;
-  border: none;
-}
-
-.range-controls {
-  position: relative;
-
-  margin-bottom: 32px;
-}
-
-.range-controls .scale {
-  height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.range-controls .bar {
-  width: 80%;
-  height: 2px;
-
-  background: #ffffff;
-}
-
-.range-toggle {
-  position: absolute;
-  top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
-}
-
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
-.range-toggle-min {
-  left: 0;
-}
-
-.range-toggle-max {
-  left: 80%;
-}
-
-.btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
-
-	width: 75px;
-	padding-left: 65px;
-	text-align: center;
-}
-
-.price-controls .min-price{
-	margin-right: 5px;
-}
-
-.price-controls input {
+.price-controls input{
 	width: 50px;
 	margin: 0;
 	color: inherit;
@@ -779,23 +700,23 @@ h3.color-white{
 	border: none;
 }
 
-.range-controls {
+.range-controls{
 	position: relative;
 	margin-bottom: 32px;
 }
 
-.range-controls .scale {
+.range-controls .scale{
 	height: 2px;
 	background: rgba(255, 255, 255, 0.3);
 }
 
-.range-controls .bar {
+.range-controls .bar{
 	width: 80%;
 	height: 2px;
 	background: #ffffff;
 }
 
-.range-toggle {
+.range-toggle{
 	position: absolute;
 	top: -9px;
 	width: 4px;
@@ -807,27 +728,38 @@ h3.color-white{
 	cursor: pointer;
 }
 
-.range-toggle:hover {
-	top: -10px;
-	border-width: 9px;
+.range-toggle:hover{
 	background: #1c4f80;
 }
 
-.range-toggle-min {
+.range-toggle-min{
 	left: 0;
 }
 
-.range-toggle-max {
+.range-toggle-max{
 	left: 80%;
+}
+
+.price-controls .min-price{
+	margin-right: 5px;
+}
+
+.price-controls input{
+	width: 50px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
 }
 
 .btn-transparent {
 	width: 137px;
 	height: 36px;
-	margin: 0 0 0 85px;
+	margin: 0 auto;
 	font-size: 14px;
 	line-height: 20px;
-	color: #ffffff;
+	color: #fff;
 	text-transform: uppercase;
 	background: transparent;
 	border: 2px solid #ffffff;
