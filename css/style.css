@@ -13,6 +13,10 @@ body{
 	background-color: #f2f2f2;
 }
 
+img{
+	max-width: 100%;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -23,7 +27,8 @@ body{
 
 .container{
 	position: relative;
-	width: 1200px;
+	min-width: 768px;
+	max-width: 1200px;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 0 15px rgba(0,1,1,.2);
@@ -63,7 +68,8 @@ body{
 .logo{
 	position: absolute;
 	top: 0;
-	left: 531px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 a{
@@ -92,6 +98,7 @@ a:not(.active-link):active{
 	align-items: flex-start;
 	background-color: #fff, #e2eff8;
 	background-image: url(../img/Shape1.png), url(../img/background-1200.jpg);
+	background-size: 100% auto, auto;
 	background-position: center bottom, center -57px;
 	background-repeat: no-repeat, no-repeat;
 }
@@ -119,6 +126,7 @@ a:not(.active-link):active{
 .feature-lead{
 	margin-top: 60px;
 	margin-bottom: 27px;
+	padding: 30%;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
@@ -139,11 +147,13 @@ a:not(.active-link):active{
 
 .feature-blue,
 .feature-gray{
-	padding: 46px 0 61px 0;
+	min-height: 256px;
+	padding: 0 0 0 0;
 	flex-basis: 33%;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -166,13 +176,16 @@ a:not(.active-link):active{
 
 .feature-blue h3,
 .feature-gray h3{
+	//margin-top: -15px;
 	margin-bottom: 23px;
+	padding: 15%;
 	text-align: center;
 }
 
 .feature-blue p:last-of-type,
 .feature-gray p:last-of-type{
 	margin-top: 21px;
+	padding: 15%;
 }
 
 .feature img{
@@ -301,10 +314,11 @@ h3.color-white{
 .find-hotel-form{
 	position: absolute;
 	top: 100%;
-	left: 315px;
+	left: 50%;
 	z-index: 2;
 	width: 459px;
 	padding: 55px;
+	transform: translateX(-50%);
 	display: flex;
 	flex-wrap: wrap;
 	background: #fff;
@@ -1034,4 +1048,14 @@ a.booking-btn:active{
 :-ms-input-placeholder {
 	color: black;
 	opacity: 1;
+}
+
+@media (max-width: 768px){
+	.intro{
+	height: 512px;
+	background-image: url(../img/Shape1.png), url(../img/background-768.jpg);
+	background-size: 100% 37px, auto;
+	background-position: center bottom, center top;
+	background-repeat: no-repeat, no-repeat;
+	}
 }
