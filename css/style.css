@@ -715,40 +715,34 @@ h3.color-white{
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+	left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-
-  background: #ffffff;
-
-	width: 75px;
-	padding-left: 65px;
+	color: #000000;
+	background: #ffffff;
 	text-align: center;
 }
 
